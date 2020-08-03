@@ -7,22 +7,16 @@ convenience of use.
 
 let Prelude = ./Prelude.dhall
 
-let Address = ./Address.dhall
-
-let Index = ./Index.dhall
-
 let Repo = ./Repo.dhall
 
 let Target = ./Target.dhall
 
-let Package = ./Package.dhall
+let Package = ./Manifest.dhall
 
 let Dependencies = Prelude.Map.Type Text Text
 
 let Registry =
-      { Address
-      , Index
-      , Repo
+      { Repo
       , Prelude
       , Dependencies
       , Target

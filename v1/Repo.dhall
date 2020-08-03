@@ -5,9 +5,7 @@ for us if packages are there (as we use their API to do things).
 So other git hosting providers are supported but the quality of service might
 not be on par sometimes.
 
-TODO remove Git constructor
-
 -}
 < GitHub : { owner : Text, repo : Text, version : Text }
-| Git : { url : Text, version : Text }
+| Git : { url : Text, ref : Text }
 >
